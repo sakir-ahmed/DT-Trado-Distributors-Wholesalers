@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>DT Salona – UI Preview</title>
+    <title>DT Trado – UI Preview</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         :root {
@@ -15,8 +15,8 @@
             --bd: #e2e8f0;
             --pr: #0f172a;
             --prf: #f8fafc;
-            --ac: #db2777;
-            --acf: #fdf2f8;
+            --ac: #2563eb;
+            --acf: #eff6ff;
             --wn: #f59e0b;
             --ok: #059669;
             --no: #e11d48;
@@ -925,7 +925,7 @@
         .paper .hd {
             display: flex;
             justify-content: space-between;
-            border-bottom: 2px solid #db2777;
+            border-bottom: 2px solid #2563eb;
             padding-bottom: 8px
         }
 
@@ -1090,538 +1090,35 @@
             flex: 1;
             min-width: 0
         }
-
-        :root {
-            --u-av: #059669;
-            --u-ho: #d97706;
-            --u-bk: #2563eb;
-            --u-so: #475569;
-            --u-lo: #0d9488;
-            --u-bl: #6b7280
-        }
-
-        :root[data-theme=dark] {
-            --u-av: #34d399;
-            --u-ho: #fbbf24;
-            --u-bk: #60a5fa;
-            --u-so: #94a3b8;
-            --u-lo: #2dd4bf;
-            --u-bl: #9ca3af
-        }
-
-        @media(prefers-color-scheme:dark) {
-            :root:not([data-theme=light]) {
-                --u-av: #34d399;
-                --u-ho: #fbbf24;
-                --u-bk: #60a5fa;
-                --u-so: #94a3b8;
-                --u-lo: #2dd4bf;
-                --u-bl: #9ca3af
-            }
-        }
-
-        .lg {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 10px
-        }
-
-        .lg button {
-            display: inline-flex;
-            gap: 6px;
-            align-items: center;
-            height: 24px;
-            padding: 0 8px;
-            border: 1px solid var(--bd);
-            border-radius: 6px;
-            background: var(--sf);
-            cursor: pointer;
-            font-size: 12px
-        }
-
-        .lg button.off {
-            opacity: .45
-        }
-
-        .sq {
-            width: 16px;
-            height: 16px;
-            border-radius: 4px;
-            display: inline-grid;
-            place-items: center;
-            font-size: 10px;
-            font-weight: 700;
-            color: #fff
-        }
-
-        .u-A {
-            background: var(--u-av)
-        }
-
-        .u-H {
-            background: var(--u-ho)
-        }
-
-        .u-B {
-            background: var(--u-bk)
-        }
-
-        .u-S {
-            background: var(--u-so)
-        }
-
-        .u-L {
-            background: var(--u-lo)
-        }
-
-        .u-X {
-            background: var(--u-bl)
-        }
-
-        .stack {
-            display: grid;
-            gap: 4px;
-            min-width: 520px
-        }
-
-        .fl {
-            display: grid;
-            grid-template-columns: 44px repeat(6, 1fr);
-            gap: 4px;
-            align-items: center
-        }
-
-        .fl>span {
-            font-size: 12px;
-            color: var(--mu);
-            text-align: right;
-            padding-right: 6px
-        }
-
-        .ce {
-            height: 40px;
-            border: 0;
-            border-radius: 6px;
-            color: #fff;
-            font-weight: 600;
-            font-size: 12px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            line-height: 1.1
-        }
-
-        .ce small {
-            font-size: 10px;
-            opacity: .9
-        }
-
-        .ce:focus-visible {
-            outline: 2px solid var(--fg);
-            outline-offset: 1px
-        }
-
-        .ce.dim {
-            opacity: .18
-        }
-
-        .kb {
-            display: grid;
-            grid-template-columns: repeat(7, minmax(190px, 1fr));
-            gap: 10px;
-            overflow: auto;
-            padding-bottom: 6px
-        }
-
-        .col {
-            background: var(--bg);
-            border: 1px solid var(--bd);
-            border-radius: 8px;
-            padding: 8px;
-            min-height: 200px
-        }
-
-        .col h3 {
-            margin: 0 0 8px;
-            font-size: 12px;
-            display: flex;
-            justify-content: space-between;
-            color: var(--mu)
-        }
-
-        .lc {
-            background: var(--sf);
-            border: 1px solid var(--bd);
-            border-radius: 8px;
-            padding: 8px;
-            margin-bottom: 8px;
-            font-size: 12px
-        }
-
-        .lc b {
-            font-size: 13px
-        }
-
-        .lc .r {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 6px;
-            gap: 4px
-        }
-
-        .fu {
-            display: grid;
-            grid-template-columns: 150px 1fr 90px;
-            gap: 8px;
-            align-items: center;
-            margin: 7px 0;
-            font-size: 13px
-        }
-
-        .fu div i {
-            display: block;
-            height: 16px;
-            border-radius: 4px;
-            background: var(--ac)
-        }
-
-        .fu span.cv {
-            color: var(--mu);
-            font-size: 12px;
-            text-align: right
-        }
-
-        .sm {
-            border: 1px solid var(--bd);
-            border-radius: 8px;
-            padding: 12px;
-            position: sticky;
-            top: 8px;
-            background: var(--sf)
-        }
-
-        .sm .rw {
-            display: flex;
-            justify-content: space-between;
-            padding: 3px 0
-        }
-
-        .sm .gt {
-            font-weight: 700;
-            font-size: 16px;
-            border-top: 1px solid var(--bd);
-            margin-top: 6px;
-            padding-top: 8px
-        }
-
-        .site {
-            border: 1px solid var(--bd);
-            border-radius: 10px;
-            overflow: hidden;
-            background: var(--sf)
-        }
-
-        .site .url {
-            background: var(--bg);
-            border-bottom: 1px solid var(--bd);
-            padding: 6px 12px;
-            font-size: 12px;
-            color: var(--mu)
-        }
-
-        .site .nv {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            padding: 10px 16px;
-            border-bottom: 1px solid var(--bd)
-        }
-
-        .site .nv b {
-            margin-right: auto;
-            font-size: 15px;
-            color: var(--ac)
-        }
-
-        .hero {
-            padding: 36px 16px;
-            background: linear-gradient(135deg, #9d174d, #db2777);
-            color: #fff
-        }
-
-        .hero h2 {
-            font-size: 22px;
-            margin: 0 0 6px
-        }
-
-        .hero p {
-            margin: 0 0 12px;
-            opacity: .9
-        }
-
-        .pj {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            padding: 16px
-        }
-
-        .pj .c {
-            border: 1px solid var(--bd);
-            border-radius: 10px;
-            overflow: hidden
-        }
-
-        .pj .im {
-            height: 90px;
-            background: linear-gradient(135deg, #fbcfe8, #f472b6)
-        }
-
-        .pj .c div.t {
-            padding: 10px
-        }
-
-        .pbo {
-            height: 8px;
-            border-radius: 99px;
-            background: var(--bd);
-            overflow: hidden
-        }
-
-        .pbo i {
-            display: block;
-            height: 100%;
-            background: var(--ac)
-        }
-
-        .ms {
-            display: flex;
-            gap: 8px;
-            padding: 8px 12px;
-            border-bottom: 1px solid var(--bd);
-            align-items: center
-        }
-
-        .ms span:first-child {
-            flex: 1
-        }
-
-        .cal {
-            display: grid;
-            grid-template-columns: 48px repeat(4, 1fr);
-            min-width: 640px
-        }
-
-        .cal .hd {
-            padding: 6px;
-            font-weight: 600;
-            text-align: center;
-            border-bottom: 1px solid var(--bd);
-            position: sticky;
-            top: 0;
-            background: var(--sf)
-        }
-
-        .tm {
-            position: relative;
-            height: 480px;
-            border-right: 1px solid var(--bd);
-            font-size: 11px;
-            color: var(--mu)
-        }
-
-        .tm span {
-            position: absolute;
-            right: 4px;
-            transform: translateY(-6px)
-        }
-
-        .cc {
-            position: relative;
-            height: 480px;
-            border-right: 1px solid var(--bd);
-            background: repeating-linear-gradient(var(--sf) 0 59px, var(--bd) 59px 60px)
-        }
-
-        .ap {
-            position: absolute;
-            left: 3px;
-            right: 3px;
-            border-radius: 6px;
-            padding: 4px 6px;
-            color: #fff;
-            font-size: 12px;
-            cursor: pointer;
-            border: 0;
-            text-align: left;
-            overflow: hidden;
-            line-height: 1.25
-        }
-
-        .ap small {
-            display: block;
-            opacity: .92
-        }
-
-        .ap:focus-visible {
-            outline: 2px solid var(--fg)
-        }
-
-        .s-bk {
-            background: #2563eb
-        }
-
-        .s-cf {
-            background: #059669
-        }
-
-        .s-ci {
-            background: #4f46e5
-        }
-
-        .s-is {
-            background: #b45309
-        }
-
-        .s-cp {
-            background: #475569
-        }
-
-        .s-ns {
-            background: #e11d48
-        }
-
-        .brk {
-            position: absolute;
-            left: 3px;
-            right: 3px;
-            background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 6px, var(--bd) 6px, var(--bd) 12px);
-            border-radius: 6px;
-            font-size: 11px;
-            color: var(--mu);
-            padding: 4px 6px
-        }
-
-        .stp2 {
-            display: flex;
-            gap: 4px;
-            padding: 8px 12px
-        }
-
-        .stp2 i {
-            flex: 1;
-            height: 4px;
-            border-radius: 2px;
-            background: var(--bd)
-        }
-
-        .stp2 i.on {
-            background: var(--ac)
-        }
-
-        .opt {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--bd);
-            cursor: pointer
-        }
-
-        .opt input {
-            width: auto;
-            height: auto
-        }
-
-        .opt span:first-of-type {
-            flex: 1
-        }
-
-        .sl {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            padding: 10px 12px
-        }
-
-        .sl button {
-            height: 44px;
-            border: 1px solid var(--bd);
-            background: var(--sf);
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            color: var(--fg)
-        }
-
-        .sl button.on {
-            background: var(--ac);
-            color: var(--acf);
-            border-color: var(--ac)
-        }
-
-        .sl button:disabled {
-            opacity: .4;
-            text-decoration: line-through;
-            cursor: not-allowed
-        }
-
-        .sm {
-            border: 1px solid var(--bd);
-            border-radius: 8px;
-            padding: 12px;
-            position: sticky;
-            top: 8px;
-            background: var(--sf)
-        }
-
-        .sm .rw {
-            display: flex;
-            justify-content: space-between;
-            padding: 3px 0
-        }
-
-        .sm .gt {
-            font-weight: 700;
-            font-size: 16px;
-            border-top: 1px solid var(--bd);
-            margin-top: 6px;
-            padding-top: 8px
-        }
     </style>
 </head>
 
 <body>
     <div class="app">
         <aside class="side">
-            <div class="logo">DT <i>Salona</i></div>
+            <div class="logo">DT <i>Trado</i></div>
             <nav class="nav">
                 <button data-t="dash" class="on"><i class="fa-solid fa-chart-line"></i> Dashboard</button><button
-                    data-t="cal"><i class="fa-solid fa-calendar-days"></i> Calendar</button><button data-t="bill"><i
-                        class="fa-solid fa-cash-register"></i> Billing counter</button><button data-t="cus"><i
-                        class="fa-solid fa-users"></i> Customer 360</button><button data-t="mk"><i
-                        class="fa-solid fa-bullhorn"></i> Marketing</button><button data-t="web"><i
-                        class="fa-solid fa-mobile-screen"></i> Online booking</button><button data-t="frm"><i
-                        class="fa-solid fa-window-restore"></i> Forms &amp; dialogs</button>
+                    data-t="out"><i class="fa-solid fa-hand-holding-dollar"></i> Outstanding</button><button
+                    data-t="pos"><i class="fa-solid fa-file-invoice-dollar"></i> Sales desk</button><button
+                    data-t="att"><i class="fa-solid fa-user-tie"></i> Salesman app</button><button data-t="lab"><i
+                        class="fa-solid fa-boxes-stacked"></i> Stock</button><button data-t="rep"><i
+                        class="fa-solid fa-money-bill-transfer"></i> Settlement</button><button data-t="frm"><i
+                        class="fa-solid fa-pen-to-square"></i> Forms &amp; Dialogs</button>
             </nav>
         </aside>
         <div class="main">
             <header class="top">
                 <select aria-label="Branch">
                     <option>All branches</option>
-                    <option>Dhaka: Gulshan</option>
-                    <option>Dhaka: Dhanmondi</option>
-                    <option>Chattogram: GEC</option>
+                    <option>Dhaka main</option>
+                    <option>Chattogram depot</option>
                 </select>
                 <span class="sp"></span>
-                <span class="pill"><span class="dot"></span>Glow Beauty Lounge · Growth plan · Trial 12 days left</span>
+                <span class="pill"><span class="dot"></span>Karim Traders · Growth plan · Trial 12 days left</span>
                 <button class="ib" aria-label="Notifications"
-                    onclick="toast('wa','5 alerts: 2 online bookings, 1 no-show, low stock on 3 products, 1 day not closed')"><i
-                        class="fa-solid fa-bell"></i><b>5</b></button>
+                    onclick="toast('wa','4 alerts: 3 approvals, 2 over-limit customers, unsettled cash')"><i
+                        class="fa-solid fa-bell"></i><b>4</b></button>
                 <button class="ib" id="theme" aria-label="Toggle theme"><i
                         class="fa-solid fa-circle-half-stroke"></i></button>
             </header>
@@ -1630,359 +1127,442 @@
                 <div class="ph">
                     <h1>Owner dashboard</h1><span class="sp"></span><button class="btn"
                         onclick="toast('ok','Dashboard refreshed')"><i class="fa-solid fa-rotate"></i> Refresh</button>
-                    <p>Updated 10:42 · every number matches its report and the ledger.</p>
+                    <p>Updated 10:42 · sales, collection and outstanding match the ledger and reports</p>
                 </div>
                 <div class="chips"><span class="chip">Today</span><span class="chip">7 days</span><span
                         class="chip on">This month</span><span class="chip">Last month</span><span
-                        class="chip">Custom</span></div>
+                        class="chip">Custom</span><span class="chip">All salesmen <i
+                            class="fa-solid fa-chevron-down"></i></span></div>
                 <div class="g k4">
                     <div class="card">
-                        <div class="lb">Revenue</div>
-                        <div class="val">৳18.6L</div><span class="up"><i class="fa-solid fa-arrow-up"></i> 8.2%</span>
-                        <span class="lb">vs Sep</span><svg viewBox="0 0 100 30" id="sp1"></svg>
+                        <div class="lb">Sales (Oct)</div>
+                        <div class="val">৳18,42,000</div><span class="up"><i class="fa-solid fa-arrow-up"></i>
+                            7.8%</span> <span class="lb">vs Sep</span><svg viewBox="0 0 100 30" id="sp1"></svg>
                     </div>
                     <div class="card">
-                        <div class="lb">Appointments</div>
-                        <div class="val">1,284</div><span class="up"><i class="fa-solid fa-arrow-up"></i> 5.4%</span>
-                        <span class="lb">no-show 4.1%</span><svg viewBox="0 0 100 30" id="sp2"></svg>
+                        <div class="lb">Collected</div>
+                        <div class="val">৳12,60,500</div><span class="dn"><i
+                                class="fa-solid fa-triangle-exclamation"></i> 68% of sales</span> <span
+                            class="lb">target 80%</span><svg viewBox="0 0 100 30" id="sp2"></svg>
                     </div>
                     <div class="card">
-                        <div class="lb">Utilization</div>
-                        <div class="val">71%</div><span class="dn"><i class="fa-solid fa-triangle-exclamation"></i>
-                            target 75%</span><svg viewBox="0 0 100 30" id="sp3"></svg>
+                        <div class="lb">Total outstanding</div>
+                        <div class="val">৳64,80,000</div><span class="dn"><i class="fa-solid fa-arrow-up"></i>
+                            4.1%</span> <span class="lb">vs Sep</span><svg viewBox="0 0 100 30" id="sp3"></svg>
                     </div>
                     <div class="card">
-                        <div class="lb">Profit</div>
-                        <div class="val">৳5.2L</div><span class="up"><i class="fa-solid fa-arrow-up"></i> 3.1%</span>
-                        <span class="lb">28% margin</span><svg viewBox="0 0 100 30" id="sp4"></svg>
+                        <div class="lb">Overdue (30+ days)</div>
+                        <div class="val">৳21,30,000</div><span class="dn"><i
+                                class="fa-solid fa-triangle-exclamation"></i> 86 customers</span><svg
+                            viewBox="0 0 100 30" id="sp4"></svg>
                     </div>
                 </div>
                 <div class="g g2" style="margin-top:12px">
                     <div class="card">
-                        <h2>Revenue by branch <span class="lb">(৳ lakh)</span></h2><svg viewBox="0 0 600 160" id="br"
-                            role="img" aria-label="Revenue by branch bar chart"></svg>
+                        <h2>Sales vs collection <span class="lb">(৳ thousand · dashed = previous month)</span></h2><svg
+                            viewBox="0 0 600 180" id="trend" role="img" aria-label="Sales trend line chart"></svg>
                     </div>
                     <div class="card">
-                        <h2>Needs attention</h2>
-                        <div class="al"><span class="badge b-wa">2</span><span>New online bookings today</span><button
-                                class="btn" onclick="go('cal')">Open</button></div>
-                        <div class="al"><span class="badge b-no"><i class="fa-solid fa-user-slash"></i></span><span>1
-                                no-show today</span><button class="btn" onclick="go('cal')">View</button></div>
-                        <div class="al"><span class="badge b-wa"><i
-                                    class="fa-solid fa-boxes-stacked"></i></span><span>Low stock: 3
-                                products</span><button class="btn"
-                                onclick="toast('in','Opens the low-stock list')">Review</button></div>
-                        <div class="al"><span class="badge b-no"><i
-                                    class="fa-solid fa-triangle-exclamation"></i></span><span>Dhanmondi: yesterday not
-                                closed</span><button class="btn" onclick="openDlg('approval')">Approve unlock</button>
+                        <h2>Sales by category</h2>
+                        <div style="display:flex;gap:12px;align-items:center"><svg viewBox="0 0 42 42" id="donut"
+                                style="width:120px" role="img" aria-label="Sales by category donut"></svg>
+                            <div id="leg" style="font-size:13px"></div>
                         </div>
                     </div>
                 </div>
                 <div class="g g3" style="margin-top:12px">
                     <div class="card">
-                        <h2>Staff: revenue this month</h2>
-                        <div class="bar"><span>Mim</span>
-                            <div><i style="width:96%"></i></div><b>3.1L</b>
+                        <h2>Salesman: target achieved</h2>
+                        <div class="bar"><span>Rahim</span>
+                            <div><i style="width:96%"></i></div><b>96%</b>
                         </div>
-                        <div class="bar"><span>Rafi</span>
-                            <div><i style="width:82%"></i></div><b>2.7L</b>
+                        <div class="bar"><span>Jamal</span>
+                            <div><i style="width:88%"></i></div><b>88%</b>
                         </div>
-                        <div class="bar"><span>Tania</span>
-                            <div><i style="width:70%"></i></div><b>2.3L</b>
+                        <div class="bar"><span>Sumon</span>
+                            <div><i style="width:74%"></i></div><b>74%</b>
                         </div>
-                        <div class="bar"><span>Sumi</span>
-                            <div><i style="width:52%"></i></div><b>1.7L</b>
+                        <div class="bar"><span>Habib</span>
+                            <div><i style="width:61%"></i></div><b>61%</b>
+                        </div>
+                        <div class="bar"><span>Shafiq</span>
+                            <div><i style="width:47%"></i></div><b>47%</b>
                         </div>
                     </div>
                     <div class="card">
-                        <h2>Top services</h2>
+                        <h2>Needs attention</h2>
+                        <div class="al"><span class="badge b-wa">3</span><span>Approvals waiting (credit,
+                                price)</span><button class="btn" onclick="openDlg('approval')">Approve</button></div>
+                        <div class="al"><span class="badge b-no"><i
+                                    class="fa-solid fa-triangle-exclamation"></i></span><span>2 customers over credit
+                                limit</span><button class="btn" onclick="go('out')">View</button></div>
+                        <div class="al"><span class="badge b-wa"><i
+                                    class="fa-solid fa-hourglass-half"></i></span><span>Cash with salesmen: ৳2,48,000
+                                unsettled</span><button class="btn" onclick="go('rep')">Settle</button></div>
+                        <div class="al"><span class="badge b-no"><i class="fa-solid fa-box-open"></i></span><span>5
+                                batches expire within 60 days</span><button class="btn"
+                                onclick="go('lab')">Review</button></div>
+                    </div>
+                    <div class="card">
+                        <h2>Top customers (Oct)</h2>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Service</th>
-                                    <th class="n">Count</th>
-                                    <th class="n">Revenue (৳)</th>
+                                    <th>Customer</th>
+                                    <th class="n">Sales (৳)</th>
+                                    <th class="n">Outstanding (৳)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Haircut and style</td>
-                                    <td class="n">412</td>
-                                    <td class="n">4,94,400.00</td>
+                                    <td>Rahman Store</td>
+                                    <td class="n">2,84,000.00</td>
+                                    <td class="n">1,20,500.00</td>
                                 </tr>
                                 <tr>
-                                    <td>Bridal makeup</td>
-                                    <td class="n">38</td>
-                                    <td class="n">3,80,000.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Facial (deep clean)</td>
-                                    <td class="n">206</td>
-                                    <td class="n">3,09,000.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Hair colour</td>
-                                    <td class="n">97</td>
-                                    <td class="n">2,91,000.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card">
-                        <h2>Win-back</h2>
-                        <p style="margin:0 0 8px">214 customers have not visited for 60 days.</p><button class="btn a"
-                            onclick="go('mk')"><i class="fa-solid fa-paper-plane"></i> Create campaign</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page tab" id="t-cal" hidden>
-                <div class="ph">
-                    <h1>Calendar: Gulshan, Thu 15 Oct 2026</h1><span class="sp"></span><button class="btn p"
-                        onclick="toast('in','New appointment slide-over opens (customer, services, staff, time)')"><i
-                            class="fa-solid fa-plus"></i> New appointment</button><button class="btn"
-                        onclick="toast('in','Walk-in added to the queue')"><i class="fa-solid fa-person-walking"></i>
-                        Walk-in</button>
-                    <p>Click a block to act on it. Hatched areas are breaks. Each block shows a status label.</p>
-                </div>
-                <div class="lg"><span class="badge b-wa"><span class="sq" style="background:#2563eb"></span>
-                        Booked</span><span class="badge b-wa"><span class="sq" style="background:#059669"></span>
-                        Confirmed</span><span class="badge b-wa"><span class="sq" style="background:#4f46e5"></span>
-                        Checked in</span><span class="badge b-wa"><span class="sq" style="background:#b45309"></span> In
-                        service</span><span class="badge b-wa"><span class="sq" style="background:#475569"></span>
-                        Completed</span><span class="badge b-wa"><span class="sq" style="background:#e11d48"></span>
-                        No-show</span></div>
-                <div class="card" style="padding:0;overflow:auto">
-                    <div class="cal" id="cal"></div>
-                </div>
-            </section>
-
-            <section class="page tab" id="t-bill" hidden>
-                <div class="ph">
-                    <h1>Billing counter</h1><span class="sp"></span><span class="pill">Branch: Gulshan</span>
-                    <p>Invoice opened from the completed appointment. Package and membership benefits are applied
-                        automatically.</p>
-                </div>
-                <div class="pb"><i class="fa-solid fa-user" style="font-size:20px;color:var(--ac)"></i>
-                    <div><b>Farzana Rahman</b><br><span class="lb">CU-04417 · 01711-XXXXXX · Gold member · Last visit 12
-                            Sep</span></div><span class="sp"></span><span class="badge b-wa">Wallet 1,200</span><span
-                        class="badge b-ok">Package: 3 facials left</span><span class="badge b-no"><i
-                            class="fa-solid fa-triangle-exclamation"></i> Allergy: ammonia dye</span>
-                </div>
-                <div class="g" style="grid-template-columns:3fr 2fr;align-items:start">
-                    <div class="card" style="padding:0">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Staff</th>
-                                    <th class="n">Price (৳)</th>
-                                    <th class="n">Disc. (৳)</th>
-                                    <th class="n">Amount (৳)</th>
-                                </tr>
-                            </thead>
-                            <tbody id="ln"></tbody>
-                        </table>
-                        <div style="padding:8px 12px"><button class="btn"
-                                onclick="toast('in','Search products and services')"><i class="fa-solid fa-plus"></i>
-                                Add item</button></div>
-                    </div>
-                    <div class="sm">
-                        <h2>Payment</h2>
-                        <div id="bs"></div>
-                        <div class="fld" style="margin-top:8px"><label>Cash</label><input class="ri" id="p1" value="0"
-                                inputmode="numeric" oninput="pay()" style="width:100%;text-align:right"></div>
-                        <div class="fld"><label>bKash (TrxID in next step)</label><input class="ri" id="p2" value="0"
-                                inputmode="numeric" oninput="pay()" style="width:100%;text-align:right"></div>
-                        <div class="fld"><label>Wallet (max 1,200)</label><input class="ri" id="p3" value="0"
-                                inputmode="numeric" oninput="pay()" style="width:100%;text-align:right"></div>
-                        <div id="pw"></div>
-                        <button class="btn p" style="width:100%;margin-top:8px" id="fb" onclick="fin()"><i
-                                class="fa-solid fa-print"></i> Finalize and print</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page tab" id="t-cus" hidden>
-                <div class="ph">
-                    <h1>Customer 360</h1><span class="sp"></span><button class="btn"><i class="fa-solid fa-phone"></i>
-                        Call</button><button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button><button
-                        class="btn p" onclick="go('cal')"><i class="fa-solid fa-plus"></i> Book</button>
-                </div>
-                <div class="g g2">
-                    <div class="card">
-                        <h2>Farzana Rahman <span class="badge b-wa">Gold</span> <span class="badge b-ok">VIP</span></h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="lb">Mobile</td>
-                                    <td>01711-XXXXXX</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb">Birthday</td>
-                                    <td>22 Nov (in 38 days)</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb">Anniversary</td>
-                                    <td>14 Feb</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb">Favourite staff</td>
-                                    <td>Mim</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb">Preference</td>
-                                    <td>Light colours, no strong fragrance</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb">Sensitive notes</td>
-                                    <td><span class="badge b-no"><i class="fa-solid fa-triangle-exclamation"></i>
-                                            Allergy: ammonia-based dye</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card">
-                        <h2>Balances</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Wallet</td>
-                                    <td class="n">1,200.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Points</td>
-                                    <td class="n">2,840</td>
-                                </tr>
-                                <tr>
-                                    <td>Package: Facial x6</td>
-                                    <td class="n">3 left, expires 31 Dec</td>
-                                </tr>
-                                <tr>
-                                    <td>Gift card GC-8KQ2</td>
-                                    <td class="n">500.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Due</td>
+                                    <td>City Mart</td>
+                                    <td class="n">2,31,500.00</td>
                                     <td class="n">0.00</td>
                                 </tr>
+                                <tr>
+                                    <td>Noor Enterprise</td>
+                                    <td class="n">1,96,200.00</td>
+                                    <td class="n">3,40,000.00</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="card" style="padding:0;margin-top:12px">
+            </section>
+
+            <section class="page tab" id="t-out" hidden>
+                <div class="ph">
+                    <h1>Outstanding and aging</h1><span class="sp"></span><button class="btn"
+                        onclick="toast('in','86 customers, 86 credits (1 segment each)')"><i
+                            class="fa-solid fa-comment-sms"></i> Send reminders</button><button class="btn"><i
+                            class="fa-solid fa-file-export"></i> Export <i
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <p>Totals equal the customer ledger exactly</p>
+                </div>
+                <div class="chips"><select style="width:150px">
+                        <option>All salesmen</option>
+                        <option>Rahim</option>
+                    </select><select style="width:150px">
+                        <option>All routes</option>
+                        <option>Mirpur 1</option>
+                    </select><span class="chip on">All</span><span class="chip">Overdue</span><span class="chip">Over
+                        limit</span><button class="btn p">Apply</button></div>
+                <div class="card" style="margin-bottom:12px">
+                    <h2>Aging (৳ lakh)</h2><svg viewBox="0 0 600 150" id="aging" role="img"
+                        aria-label="Aging bar chart"></svg>
+                </div>
+                <div class="card" style="padding:0;overflow:auto">
                     <table>
                         <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Branch</th>
-                                <th>Service</th>
-                                <th>Staff</th>
-                                <th>Products used</th>
-                                <th class="n">Amount (৳)</th>
+                                <th>Customer</th>
+                                <th>Salesman</th>
+                                <th class="n">Outstanding (৳)</th>
+                                <th class="n">Overdue (৳)</th>
+                                <th class="n">Oldest (days)</th>
+                                <th class="n">Limit (৳)</th>
                                 <th class="c">Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>12 Sep 2026</td>
-                                <td>Gulshan</td>
-                                <td>Hair colour (ammonia-free)</td>
-                                <td>Mim</td>
-                                <td>Colour 6.3 (60 ml)</td>
-                                <td class="n">3,000.00</td>
-                                <td class="c"><span class="badge b-ok"><i class="fa-solid fa-circle-check"></i>
-                                        Completed</span></td>
+                                <td>Noor Enterprise</td>
+                                <td>Rahim</td>
+                                <td class="n">3,40,000.00</td>
+                                <td class="n neg">2,10,000.00</td>
+                                <td class="n">74</td>
+                                <td class="n">3,00,000.00</td>
+                                <td class="c"><span class="badge b-no"><i class="fa-solid fa-ban"></i> Over limit</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td>20 Aug 2026</td>
-                                <td>Dhanmondi</td>
-                                <td>Facial (deep clean)</td>
-                                <td>Tania</td>
-                                <td>Cleanser (15 ml)</td>
-                                <td class="n">0.00</td>
-                                <td class="c"><span class="badge b-wa"><i class="fa-solid fa-box-open"></i>
-                                        Package</span></td>
+                                <td>Rahman Store</td>
+                                <td>Jamal</td>
+                                <td class="n">1,20,500.00</td>
+                                <td class="n neg">38,000.00</td>
+                                <td class="n">41</td>
+                                <td class="n">2,00,000.00</td>
+                                <td class="c"><span class="badge b-wa"><i class="fa-solid fa-clock"></i> Overdue</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td>02 Jul 2026</td>
-                                <td>Gulshan</td>
-                                <td>Haircut and style</td>
-                                <td>Rafi</td>
-                                <td>None</td>
-                                <td class="n">1,200.00</td>
+                                <td>Bhai Bhai Traders</td>
+                                <td>Rahim</td>
+                                <td class="n">96,400.00</td>
+                                <td class="n neg">96,400.00</td>
+                                <td class="n">112</td>
+                                <td class="n">1,00,000.00</td>
+                                <td class="c"><span class="badge b-no"><i class="fa-solid fa-triangle-exclamation"></i>
+                                        90+ days</span></td>
+                            </tr>
+                            <tr>
+                                <td>City Mart</td>
+                                <td>Sumon</td>
+                                <td class="n nil">–</td>
+                                <td class="n nil">–</td>
+                                <td class="n nil">–</td>
+                                <td class="n">5,00,000.00</td>
                                 <td class="c"><span class="badge b-ok"><i class="fa-solid fa-circle-check"></i>
-                                        Completed</span></td>
+                                        Clear</span></td>
                             </tr>
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total (4 shown)</td>
+                                <td></td>
+                                <td class="n">5,56,900.00</td>
+                                <td class="n">3,44,400.00</td>
+                                <td class="n"></td>
+                                <td class="n"></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </section>
 
-            <section class="page tab" id="t-mk" hidden>
+            <section class="page tab" id="t-pos" hidden>
                 <div class="ph">
-                    <h1>Win-back campaign</h1>
-                    <p>Segment: customers with no visit for 60 days. Opted-out customers are excluded automatically.</p>
+                    <h1>New invoice</h1><span class="sp"></span><span class="pill">Warehouse: Dhaka main</span><span
+                        class="pill">Price list: Wholesale</span>
+                    <p>Type a product name, code or scan a barcode. Enter moves to the next field. Shortcuts: / search ·
+                        F4 payment · F9 save and print</p>
                 </div>
-                <div class="g g2" style="align-items:start">
+                <div class="pb"><i class="fa-solid fa-store" style="font-size:20px;color:var(--ac)"></i>
+                    <div><b>Noor Enterprise</b><br><span class="lb">C-0231 · Mirpur 1 route · Salesman Rahim</span>
+                    </div><span class="sp"></span><span class="badge b-no">Outstanding 3,40,000.00</span><span
+                        class="badge b-wa">Limit 3,00,000.00</span><span class="badge b-no"><i
+                            class="fa-solid fa-clock"></i> Overdue 2,10,000.00</span>
+                </div>
+                <div id="cw"></div>
+                <div class="card" style="padding:0;overflow:auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Unit</th>
+                                <th class="n">Stock</th>
+                                <th class="n">Qty</th>
+                                <th class="n">Rate (৳)</th>
+                                <th class="n">Disc. (৳)</th>
+                                <th class="n">Amount (৳)</th>
+                                <th class="c"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="ln"></tbody>
+                    </table>
+                </div>
+                <div class="g g2" style="margin-top:12px">
                     <div class="card">
-                        <div class="fld"><label>Segment</label><select id="sg" onchange="mkc()">
-                                <option value="214">Inactive 60 days (214)</option>
-                                <option value="57">Birthdays this week (57)</option>
-                                <option value="31">Package expiring in 14 days (31)</option>
-                            </select></div>
-                        <div class="fld"><label>Channel</label><select id="ch" onchange="mkc()">
-                                <option value="1">SMS</option>
-                                <option value="2">WhatsApp (template)</option>
-                            </select></div>
-                        <div class="fld"><label>Message *</label><input id="mg"
-                                value="We miss you! Get 15% off your next visit. Code: MISSYOU15"
-                                oninput="mkc()"><small>English text: 160 characters per segment. Bangla uses 70.</small>
-                        </div>
-                        <div class="fld"><label>Coupon</label><select>
-                                <option>MISSYOU15: 15% off, valid 30 days, one use</option>
-                            </select></div>
+                        <div class="fld"><label>Note</label><input placeholder="Optional"></div><small class="lb">Scheme
+                            applied: Buy 10 cartons, get 1 free (Soap 100g)</small>
                     </div>
-                    <div class="sm">
-                        <h2>Before you send</h2>
-                        <div id="mks"></div><button class="btn p" style="width:100%;margin-top:10px"
-                            onclick="sendC()"><i class="fa-solid fa-paper-plane"></i> Send campaign</button>
+                    <div class="card">
+                        <div class="tot" id="tt"></div>
+                        <div style="display:flex;gap:8px"><button class="btn" style="flex:1"
+                                onclick="toast('ok','Saved as order')">Save as order</button><button class="btn a"
+                                style="flex:2" onclick="saveInv()"><i class="fa-solid fa-print"></i> Save and print
+                                (F9)</button></div>
                     </div>
                 </div>
             </section>
 
-            <section class="page tab" id="t-web" hidden>
+            <section class="page tab" id="t-att" hidden>
                 <div class="ph">
-                    <h1>Online booking (customer phone view)</h1>
-                    <p>Five short steps. Only real slots are shown. Booking enters the calendar and CRM automatically.
-                    </p>
+                    <h1>Salesman app (phone view)</h1>
+                    <p>Mobile-first, works offline. Add quantities, watch the credit check, then submit. Everything
+                        saves on the phone first and syncs later.</p>
                 </div>
                 <div class="phone">
-                    <div class="hd2"><b>Glow Beauty Lounge</b><br><span class="lb">Gulshan · Open 10:00 to 20:00</span>
+                    <div class="hd2">
+                        <div style="display:flex;justify-content:space-between;align-items:center"><b>Rahman
+                                Store</b><span class="pill"><span class="dot"
+                                    style="background:var(--wn)"></span>Offline · 2 pending</span></div><span
+                            class="lb">C-0114 · Visit 3 of 14 · checked in 11:20</span>
+                        <div style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap"><span
+                                class="badge b-wa">Outstanding 1,20,500</span><span class="badge b-ok">Available credit
+                                79,500</span></div>
                     </div>
-                    <div class="stp2" id="stp"></div>
-                    <div id="wb"></div>
-                    <div class="pbar"><button class="btn a" id="nx" onclick="nextW()">Continue</button></div>
+                    <div id="pl"></div>
+                    <div id="aw" style="padding:0 12px"></div>
+                    <div class="sbar">
+                        <div class="row"><span id="ac">0 items</span><span id="at2">৳0</span></div>
+                        <div style="display:flex;gap:8px"><button class="btn" style="flex:1;height:44px"
+                                onclick="toast('ok','Collect payment screen opens (offline OK)')"><i
+                                    class="fa-solid fa-hand-holding-dollar"></i> Collect</button><button class="btn a"
+                                style="flex:2;height:44px" onclick="subApp()"><i class="fa-solid fa-paper-plane"></i>
+                                Submit order</button></div>
+                    </div>
                 </div>
+            </section>
+
+            <section class="page tab" id="t-lab" hidden>
+                <div class="ph">
+                    <h1>Stock position</h1><span class="sp"></span><button class="btn"><i
+                            class="fa-solid fa-file-export"></i> Export <i
+                            class="fa-solid fa-chevron-down"></i></button><button class="btn p"><i
+                            class="fa-solid fa-plus"></i> Goods receipt</button>
+                    <p>Balance always equals the sum of stock movements</p>
+                </div>
+                <div class="chips"><select style="width:170px">
+                        <option>Dhaka main</option>
+                        <option>Van: Rahim</option>
+                    </select><span class="chip on">All</span><span class="chip">Low stock</span><span class="chip">Near
+                        expiry</span><span class="chip">Dead stock</span></div>
+                <div class="card" style="padding:0;overflow:auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Batch</th>
+                                <th>Expiry</th>
+                                <th class="n">On hand (pcs)</th>
+                                <th class="n">Value (৳)</th>
+                                <th class="n">Days of stock</th>
+                                <th class="c">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Soap 100g</td>
+                                <td>B-2601</td>
+                                <td>12 Dec 2026</td>
+                                <td class="n">4,800</td>
+                                <td class="n">1,92,000.00</td>
+                                <td class="n">22</td>
+                                <td class="c"><span class="badge b-no"><i class="fa-solid fa-box-open"></i> Expires in
+                                        58 days</span></td>
+                            </tr>
+                            <tr>
+                                <td>Soap 100g</td>
+                                <td>B-2606</td>
+                                <td>20 Jun 2027</td>
+                                <td class="n">12,000</td>
+                                <td class="n">4,80,000.00</td>
+                                <td class="n">55</td>
+                                <td class="c"><span class="badge b-ok"><i class="fa-solid fa-circle-check"></i>
+                                        OK</span></td>
+                            </tr>
+                            <tr>
+                                <td>Detergent 500g</td>
+                                <td>B-2602</td>
+                                <td>01 Mar 2027</td>
+                                <td class="n">310</td>
+                                <td class="n">46,500.00</td>
+                                <td class="n">4</td>
+                                <td class="c"><span class="badge b-wa"><i class="fa-solid fa-triangle-exclamation"></i>
+                                        Low stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>Biscuit 200g</td>
+                                <td>B-2530</td>
+                                <td>05 Jan 2027</td>
+                                <td class="n">9,600</td>
+                                <td class="n">2,88,000.00</td>
+                                <td class="n">130</td>
+                                <td class="c"><span class="badge b-wa"><i class="fa-solid fa-hourglass-half"></i> Slow
+                                        moving</span></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td></td>
+                                <td></td>
+                                <td class="n">26,710</td>
+                                <td class="n">10,06,500.00</td>
+                                <td class="n"></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <section class="page tab" id="t-rep" hidden>
+                <div class="ph">
+                    <h1>Cash settlement: Rahim</h1><span class="sp"></span><span class="pill">Day: 15 Oct 2026</span>
+                    <p>The cashier counts the cash. Differences are recorded and need approval, never hidden.</p>
+                </div>
+                <div class="g k4" style="margin-bottom:12px">
+                    <div class="card">
+                        <div class="lb">Collected today</div>
+                        <div class="val">৳1,48,000</div>
+                    </div>
+                    <div class="card">
+                        <div class="lb">Cash expected</div>
+                        <div class="val">৳92,000</div>
+                    </div>
+                    <div class="card">
+                        <div class="lb">bKash / Nagad (unverified)</div>
+                        <div class="val">৳26,000</div>
+                    </div>
+                    <div class="card">
+                        <div class="lb">Cheques</div>
+                        <div class="val">৳30,000</div>
+                    </div>
+                </div>
+                <div class="card" style="padding:0;overflow:auto">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th class="n">Expected (৳)</th>
+                                <th class="n">Counted (৳)</th>
+                                <th class="n">Difference (৳)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cash</td>
+                                <td class="n">92,000.00</td>
+                                <td class="n"><input class="ri" id="cnt" value="91,500.00" style="width:110px"
+                                        oninput="sd()"></td>
+                                <td class="n" id="df">-500.00</td>
+                            </tr>
+                            <tr>
+                                <td>bKash / Nagad (TrxID)</td>
+                                <td class="n">26,000.00</td>
+                                <td class="n">26,000.00</td>
+                                <td class="n nil">–</td>
+                            </tr>
+                            <tr>
+                                <td>Cheque (2)</td>
+                                <td class="n">30,000.00</td>
+                                <td class="n">30,000.00</td>
+                                <td class="n nil">–</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pw no" id="sw"><i class="fa-solid fa-triangle-exclamation"></i><span>Shortage of 500.00
+                        needs supervisor approval and becomes a recoverable record.</span></div>
+                <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn"
+                        onclick="openDlg('reason')">Reverse a receipt</button><button class="btn p"
+                        onclick="settle()"><i class="fa-solid fa-circle-check"></i> Settle and close day</button></div>
             </section>
 
             <section class="page tab" id="t-frm" hidden>
                 <div class="ph">
                     <h1>Forms, dialogs &amp; feedback</h1>
-                    <p>Try everything: save with empty fields, open each dialog, trigger toasts.</p>
+                    <p>Try everything: press Save with empty fields, open each dialog, trigger toasts.</p>
                 </div>
                 <div class="g" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
                     <div class="card">
                         <h2>New customer</h2>
                         <form id="sf" novalidate>
                             <div class="ban" id="ban"></div>
-                            <div class="fld" id="d1"><label>Name *</label><input id="f1" autocomplete="off">
-                                <div class="err"></div>
+                            <div class="fld" id="d1"><label>Shop name *</label><input id="f1" autocomplete="off">
+                                <div class="err"></div><small>Name as on the trade license or shop sign</small>
                             </div>
-                            <div class="fld" id="d2"><label>Mobile *</label><input id="f2" inputmode="numeric"
+                            <div class="fld" id="d2"><label>Owner mobile *</label><input id="f2" inputmode="numeric"
                                     placeholder="01XXXXXXXXX">
-                                <div class="err"></div><small>11 digits, starts with 01. An existing mobile opens that
-                                    customer instead.</small>
+                                <div class="err"></div><small>11 digits, starts with 01</small>
                             </div>
                             <div class="fld" id="d3"><label>Email (optional)</label><input id="f3">
                                 <div class="err"></div>
@@ -2003,18 +1583,21 @@
                         <h2 style="margin-top:14px">Slide-over &amp; toasts</h2>
                         <div style="display:flex;gap:6px;flex-wrap:wrap">
                             <button class="btn a" onclick="$('#so').classList.add('on')"><i
-                                    class="fa-solid fa-comment-sms"></i> Reminder</button><button class="btn"
-                                onclick="toast('ok','Invoice INV-GU-26-004512 saved')">Success</button><button
-                                class="btn"
-                                onclick="toast('no','That slot was just taken. Pick another time.')">Error</button><button
-                                class="btn" onclick="toast('wa','Payments do not equal the total')">Warning</button>
+                                    class="fa-solid fa-plus"></i> Remind overdue</button><button class="btn"
+                                onclick="toast('ok','Invoice saved')">Success</button><button class="btn"
+                                onclick="toast('no','Could not reach bKash. Check the internet and try again.','Retry')">Error</button><button
+                                class="btn" onclick="toast('wa','Item removed','Undo')">Undo</button>
                         </div>
                     </div>
                     <div class="card">
                         <h2>Bangla &amp; money</h2>
-                        <p style="line-height:1.8;margin:0">আজকের মোট বিক্রয়: <b>৳৮৪,৫০০</b><br>গ্রাহক কোড
-                            CU-04417<br><span class="lb">Bangla font rendering and Bangladesh number grouping
-                                check.</span></p>
+                        <p style="line-height:1.8;margin:0">আজকের মোট বিক্রয়: <b>৳১৮,৪২,০০০</b><br>বকেয়া: গ্রাহক কোড
+                            C-0231<br><span class="lb">Bangla font renders alongside Inter · Bangladesh grouping
+                                ৳12,34,567</span></p>
+                        <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap"><span class="badge b-ok"><i
+                                    class="fa-solid fa-circle-check"></i> Paid</span><span class="badge b-wa"><i
+                                    class="fa-solid fa-clock"></i> Pending</span><span class="badge b-no"><i
+                                    class="fa-solid fa-ban"></i> Void</span></div>
                     </div>
                 </div>
             </section>
@@ -2026,20 +1609,22 @@
     </div>
     <aside class="so" id="so">
         <div style="display:flex;align-items:center">
-            <h2 style="flex:1">Appointment reminder (SMS)</h2><button class="ib"
-                onclick="$('#so').classList.remove('on')" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <h2 style="flex:1">Overdue reminder (SMS)</h2><button class="ib" onclick="$('#so').classList.remove('on')"
+                aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="fld"><label>Audience *</label><select>
-                <option>Tomorrow's appointments: 46 customers</option>
-                <option>Today, not yet confirmed: 8 customers</option>
+                <option>Overdue 30+ days: 86 customers</option>
+                <option>Route Mirpur 1: 24 customers</option>
+                <option>Salesman Rahim: 41 customers</option>
             </select></div>
-        <div class="fld"><label>Message *</label><input
-                value="Reminder: {service} at {time} on {date}, Glow Beauty Lounge."><small>English text: 1 segment per
-                message.</small></div>
+        <div class="fld"><label>Message *</label><input value="Your payment is overdue. Please pay to our salesman.">
+        </div>
+        <div class="fld"><label>Cost</label><input value="86 credits (1 segment x 86 customers)" readonly><small>Credits
+                left after sending: 1,914. Bangla SMS: 70 characters per segment.</small></div>
         <div style="margin-top:auto;display:flex;justify-content:flex-end;gap:8px"><button class="btn"
                 onclick="$('#so').classList.remove('on')">Cancel</button><button class="btn p"
-                onclick="$('#so').classList.remove('on');toast('ok','Sent to 46 customers. 46 credits used.')"><i
-                    class="fa-solid fa-paper-plane"></i> Send (46 credits)</button></div>
+                onclick="$('#so').classList.remove('on');toast('ok','Sent to 86 customers. 86 credits used.')">Send
+                SMS</button></div>
     </aside>
     <div id="toasts"></div>
 
@@ -2049,90 +1634,61 @@
         $$('.nav button').forEach(b => b.onclick = () => go(b.dataset.t));
         $('#theme').onclick = () => { const d = document.documentElement, dk = (d.dataset.theme || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light')) === 'dark'; d.dataset.theme = dk ? 'light' : 'dark' };
         $$('.chips .chip').forEach(c => c.onclick = () => { c.parentNode.querySelectorAll('.chip').forEach(x => x.classList.remove('on')); c.classList.add('on') });
-        function toast(t, m) { const e = document.createElement('div'); e.className = 'toast ' + t; e.innerHTML = '<b><i class="fa-solid fa-' + ({ ok: 'circle-check', no: 'circle-xmark', wa: 'triangle-exclamation', in: 'circle-info' })[t] + '"></i></b><span>' + m + '</span>'; $('#toasts').appendChild(e); setTimeout(() => e.remove(), 4000) }
-        function fmt(n) { return n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }
+        function toast(t, m, a) { const e = document.createElement('div'); e.className = 'toast ' + t; e.innerHTML = '<b>' + '<i class="fa-solid fa-' + ({ ok: 'circle-check', no: 'circle-xmark', wa: 'triangle-exclamation', in: 'circle-info' })[t] + '"></i>' + '</b><span>' + m + '</span>' + (a ? '<button>' + a + '</button>' : ''); $('#toasts').append(e); const b = e.querySelector('button'); if (b) b.onclick = () => e.remove(); setTimeout(() => e.remove(), t === 'no' ? 8000 : 3500) }
+        /* charts */
         function ln(a, w, h, mx) { return a.map((v, i) => (i ? 'L' : 'M') + (i * w / (a.length - 1)).toFixed(1) + ',' + (h - v / mx * h).toFixed(1)).join('') }
-        [['sp1', [30, 34, 33, 40, 44, 41, 48, 46, 52, 55], '--ac'], ['sp2', [30, 34, 33, 40, 44, 41, 48, 46, 52, 55], '--ok'], ['sp3', [30, 31, 29, 32, 33, 32, 34, 33, 35, 36], '--wn'], ['sp4', [20, 22, 21, 26, 28, 27, 31, 30, 34, 36], '--ok']].forEach(([id, a, c]) => $('#' + id).innerHTML = '<path d="' + ln(a, 100, 26, Math.max(...a) * 1.1) + '" fill="none" stroke="var(' + c + ')" stroke-width="2"/>');
-        const BR = [['Gulshan', 7.4], ['Dhanmondi', 5.9], ['Chattogram', 3.2], ['Uttara', 2.1]];
-        $('#br').innerHTML = BR.map((b, i) => '<rect x="' + (50 + i * 135) + '" y="' + (140 - b[1] * 16) + '" width="80" height="' + (b[1] * 16) + '" rx="3" fill="var(--ac)"/><text x="' + (90 + i * 135) + '" y="156" text-anchor="middle" font-size="12" fill="var(--mu)">' + b[0] + '</text><text x="' + (90 + i * 135) + '" y="' + (134 - b[1] * 16) + '" text-anchor="middle" font-size="12" fill="var(--fg)">' + b[1] + '</text>').join('');
-        /* calendar: 10:00 to 18:00, 60px per hour */
-        const SF = ['Mim', 'Rafi', 'Tania', 'Sumi']; const SS = { bk: 'Booked', cf: 'Confirmed', ci: 'Checked in', is: 'In service', cp: 'Completed', ns: 'No-show' };
-        const AP = [[0, 0, 90, 'Farzana R.', 'Hair colour', 'cf'], [0, 150, 60, 'Nadia K.', 'Haircut', 'bk'], [0, 270, 60, 'Online: Shila', 'Haircut', 'bk'], [1, 30, 60, 'Imran H.', 'Beard trim', 'cp'], [1, 120, 60, 'Tasnim A.', 'Haircut and style', 'is'], [1, 330, 60, 'Walk-in', 'Shave', 'ci'], [2, 0, 60, 'Rina S.', 'Facial', 'cp'], [2, 90, 90, 'Maliha P.', 'Bridal trial', 'cf'], [2, 300, 60, 'Joya D.', 'Facial', 'ns'], [3, 60, 60, 'Online: Sadia', 'Manicure', 'bk'], [3, 210, 60, 'Lamia Z.', 'Pedicure', 'cf']];
-        function cal() {
-            let h = '<div class="hd"></div>' + SF.map(s => '<div class="hd">' + s + '</div>').join(''); h += '<div class="tm">' + [10, 11, 12, 13, 14, 15, 16, 17].map((x, i) => '<span style="top:' + (i * 60) + 'px">' + x + ':00</span>').join('') + '</div>';
-            SF.forEach((s, si) => { h += '<div class="cc"><div class="brk" style="top:180px;height:30px"><i class="fa-solid fa-mug-hot"></i> Break</div>' + AP.map((a, i) => a[0] === si ? '<button class="ap s-' + a[5] + '" style="top:' + a[1] + 'px;height:' + (a[2] - 2) + 'px" onclick="ac(' + i + ')" aria-label="' + a[3] + ' ' + a[4] + ' ' + SS[a[5]] + '"><b>' + a[3] + '</b><small>' + a[4] + '</small><small>' + SS[a[5]] + '</small></button>' : '').join('') + '</div>' }); $('#cal').innerHTML = h
-        }
-        const NX = { bk: ['cf', 'Confirm'], cf: ['ci', 'Check in'], ci: ['is', 'Start service'], is: ['cp', 'Complete and bill'] };
-        function ac(i) {
-            const a = AP[i], n = NX[a[5]]; const bx = $('#dlg'); bx.innerHTML = '<div class="dic" style="color:var(--ac);background:color-mix(in srgb,var(--ac) 15%,transparent)"><i class="fa-solid fa-calendar-check"></i></div><h3>' + a[3] + ': ' + a[4] + '</h3><p>Status: <b>' + SS[a[5]] + '</b>. ' + (a[3].startsWith('Farzana') ? 'Allergy: ammonia-based dye. Use ammonia-free colour.' : 'No special notes.') + '</p><div class="acts"><button class="btn" id="dc">Close</button>' + (a[5] === 'bk' || a[5] === 'cf' ? '<button class="btn" id="dn">Mark no-show</button>' : '') + (n ? '<button class="btn a" id="dy">' + n[1] + '</button>' : '') + '</div>';
-            $('#ov').classList.add('on'); $('#dc').onclick = cl; if ($('#dn')) $('#dn').onclick = () => { a[5] = 'ns'; cal(); cl(); toast('wa', 'Marked as no-show. Count for this customer: 1') };
-            if (n) $('#dy').onclick = () => { a[5] = n[0]; cal(); cl(); toast('ok', a[3] + ': ' + SS[n[0]]); if (n[0] === 'cp') go('bill') }
-        }
-        cal();
-        /* billing */
-        const LN = [['Hair colour (ammonia-free)', 'Mim', 3000, 0], ['Facial (package: 1 session used)', 'Tania', 1500, 1500], ['Haircut and style', 'Rafi', 1200, 120]];
-        function tot() { return LN.reduce((a, l) => a + l[2] - l[3], 0) }
-        function rl() {
-            $('#ln').innerHTML = LN.map(l => '<tr><td>' + l[0] + '</td><td>' + l[1] + '</td><td class="n">' + fmt(l[2]) + '</td><td class="n">' + fmt(l[3]) + '</td><td class="n">' + fmt(l[2] - l[3]) + '</td></tr>').join('');
-            $('#bs').innerHTML = '<div class="rw"><span>Subtotal</span><span>৳' + fmt(LN.reduce((a, l) => a + l[2], 0)) + '</span></div><div class="rw"><span>Package and member discount</span><span>-৳' + fmt(LN.reduce((a, l) => a + l[3], 0)) + '</span></div><div class="rw gt"><span>Total</span><span>৳' + fmt(tot()) + '</span></div><div class="rw lb"><span>Points to earn</span><span>+' + Math.floor(tot() / 10) + '</span></div>'; pay()
-        }
-        function pv(id) { return parseFloat(($(id).value || '0').replace(/,/g, '')) || 0 }
-        function pay() {
-            const p = pv('#p1') + pv('#p2') + pv('#p3'), d = tot() - p;
-            $('#pw').innerHTML = pv('#p3') > 1200 ? '<div class="pw no"><i class="fa-solid fa-ban"></i><span>Wallet balance is only 1,200.00.</span></div>' : (d === 0 ? '<div class="pw" style="border-color:var(--ok)"><i class="fa-solid fa-circle-check" style="color:var(--ok)"></i><span>Payments equal the total.</span></div>' : '<div class="pw"><i class="fa-solid fa-triangle-exclamation"></i><span>' + (d > 0 ? 'Remaining ৳' + fmt(d) + ' (can be saved as customer due).' : 'Over by ৳' + fmt(-d)) + '</span></div>');
-            $('#fb').disabled = d < 0 || pv('#p3') > 1200
-        }
-        function fin() { const d = tot() - (pv('#p1') + pv('#p2') + pv('#p3')); toast(d > 0 ? 'wa' : 'ok', d > 0 ? 'Finalized with a due of ৳' + fmt(d) + '. Customer due created.' : 'Invoice INV-GU-26-004512 finalized and printing.') }
-        rl();
-        /* marketing */
-        function mkc() {
-            const n = +$('#sg').value, ch = +$('#ch').value, m = $('#mg').value, seg = /[^\x00-\x7f]/.test(m) ? Math.ceil(m.length / 70) : Math.ceil(m.length / 160), opt = Math.round(n * 0.06), a = n - opt, cr = a * seg * (ch === 2 ? 2 : 1);
-            $('#mks').innerHTML = '<div class="rw"><span>Matching customers</span><span>' + n + '</span></div><div class="rw"><span>Opted out (excluded)</span><span>-' + opt + '</span></div><div class="rw"><span>Audience</span><span>' + a + '</span></div><div class="rw"><span>Segments per message</span><span>' + seg + '</span></div><div class="rw gt"><span>Credits needed</span><span>' + cr + '</span></div><div class="rw lb"><span>Credits available</span><span>1,420</span></div>'
-        }
-        function sendC() { toast('ok', 'Campaign queued. Results appear as bookings arrive.') }
-        mkc();
-        /* online booking */
-        const WS = ['Services', 'Staff and time', 'Your details', 'Confirm']; let st = 0, sel = { svc: [], slot: null };
-        const SV = [['Haircut and style', 60, 1200], ['Facial (deep clean)', 60, 1500], ['Manicure', 45, 700], ['Hair colour', 90, 3000]];
-        function drawW() {
-            $('#stp').innerHTML = WS.map((x, i) => '<i class="' + (i <= st ? 'on' : '') + '"></i>').join(''); let h = '<div style="padding:8px 12px"><b>Step ' + (st + 1) + ' of 4: ' + WS[st] + '</b></div>';
-            if (st === 0) h += SV.map((s, i) => '<label class="opt"><input type="checkbox" ' + (sel.svc.includes(i) ? 'checked' : '') + ' onchange="ts(' + i + ')"><span><b>' + s[0] + '</b><br><small class="lb">' + s[1] + ' min</small></span><span>৳' + fmt(s[2]) + '</span></label>').join('');
-            if (st === 1) { h += '<div style="padding:0 12px"><div class="fld"><label>Staff</label><select><option>Any available</option><option>Mim</option><option>Rafi</option></select></div><label class="lb">Today, 15 Oct</label></div><div class="sl">' + ['10:00', '10:45', '11:30', '12:15', '13:00', '14:30', '15:15', '16:00', '17:00'].map((x, i) => '<button ' + (i === 1 || i === 4 ? 'disabled aria-label="' + x + ' taken"' : '') + ' class="' + (sel.slot === x ? 'on' : '') + '" onclick="sel.slot=\'' + x + '\';drawW()">' + x + '</button>').join('') + '</div><div class="lb" style="padding:0 12px">Struck-through times are taken. <a style="color:var(--ac);cursor:pointer" onclick="toast(\'in\',\'Added to the waitlist for today\')">Join the waitlist</a></div>' }
-            if (st === 2) h += '<form id="wf" novalidate style="padding:0 12px"><div class="fld" id="w1"><label for="wn">Your name *</label><input id="wn"><div class="err"></div></div><div class="fld" id="w2"><label for="wm">Mobile *</label><input id="wm" inputmode="numeric" placeholder="01XXXXXXXXX"><div class="err"></div><small>We send a code to confirm your booking.</small></div></form>';
-            if (st === 3) h += '<div style="padding:12px"><div class="pw" style="border-color:var(--ok)"><i class="fa-solid fa-circle-check" style="color:var(--ok)"></i><span>Booking confirmed for ' + sel.slot + ' today. A confirmation SMS is on its way.</span></div><div class="lb">' + sel.svc.map(i => SV[i][0]).join(', ') + '</div></div>';
-            $('#wb').innerHTML = h; $('#nx').textContent = st === 3 ? 'Done' : (st === 2 ? 'Verify and book' : 'Continue'); $('#nx').disabled = false
-        }
-        function ts(i) { const k = sel.svc.indexOf(i); k >= 0 ? sel.svc.splice(k, 1) : sel.svc.push(i) }
-        function vw(id, d, msg, f) { const ok = f($(id).value); $(d).classList.toggle('bad', !ok); $(d).querySelector('.err').innerHTML = ok ? '' : '<i class="fa-solid fa-circle-exclamation"></i> ' + msg; return ok }
-        function nextW() {
-            if (st === 0 && !sel.svc.length) { toast('wa', 'Choose at least one service'); return } if (st === 1 && !sel.slot) { toast('wa', 'Choose a time'); return }
-            if (st === 2) { const a = vw('#wn', '#w1', 'Please enter your name.', v => v.trim()), b = vw('#wm', '#w2', 'Mobile must be 11 digits starting with 01.', v => /^01[3-9]\d{8}$/.test(v)); if (!(a && b)) { toast('no', 'Please fix the highlighted fields'); return } }
-            if (st === 3) { st = 0; sel = { svc: [], slot: null }; drawW(); toast('ok', 'Added to the calendar and CRM'); return } st++; drawW()
-        }
-        drawW();
+        const S = [48, 52, 47, 60, 66, 58, 71, 64, 69, 75, 72, 80, 78, 86], P = [44, 46, 45, 50, 55, 52, 58, 57, 60, 62, 61, 66, 65, 70];
+        let g = ''; for (let i = 0; i < 5; i++)g += `<line x1="0" x2="600" y1="${i * 40 + 10}" y2="${i * 40 + 10}" stroke="var(--bd)"/>`;
+        $('#trend').innerHTML = g + `<path d="${ln(S, 600, 170, 100)}L600,170L0,170Z" fill="var(--ac)" opacity=".18" transform="translate(0,5)"/><path d="${ln(P, 600, 170, 100)}" fill="none" stroke="var(--mu)" stroke-width="2" stroke-dasharray="5 4" transform="translate(0,5)"/><path d="${ln(S, 600, 170, 100)}" fill="none" stroke="var(--ac)" stroke-width="3" transform="translate(0,5)"/>`;
+        [['sp1', S, '--ac'], ['sp2', [30, 34, 33, 40, 44, 41, 48, 46, 52, 55], '--ok'], ['sp3', [30, 31, 29, 32, 33, 32, 34, 33, 35, 36], '--no'], ['sp4', [10, 12, 9, 14, 13, 18, 16, 20, 19, 24], '--no']].forEach(([id, a, c]) => $('#' + id).innerHTML = `<path d="${ln(a, 100, 26, Math.max(...a) * 1.1)}" fill="none" stroke="var(${c})" stroke-width="1.8" transform="translate(0,2)"/>`);
+        const CH = [['FMCG', 46, 'var(--ac)'], ['Personal care', 24, 'var(--c3)'], ['Beverages', 17, 'var(--c4)'], ['Stationery', 8, 'var(--ok)'], ['Other', 5, 'var(--wn)']]; let off = 25, dn = '<circle cx="21" cy="21" r="15.9155" fill="none" stroke="var(--bd)" stroke-width="6"/>', lg = '';
+        CH.forEach(([n, v, c]) => { dn += `<circle cx="21" cy="21" r="15.9155" fill="none" stroke="${c}" stroke-width="6" stroke-dasharray="${v} ${100 - v}" stroke-dashoffset="${off}"/>`; off -= v; lg += `<div><i class="fa-solid fa-circle" style="color:${c};font-size:8px;margin-right:4px"></i> ${n} <b>${v}%</b></div>` });
+        $('#donut').innerHTML = dn + '<text x="21" y="23" text-anchor="middle" font-size="6" font-weight="700" fill="var(--fg)">৳18.4L</text>'; $('#leg').innerHTML = lg;
+        /* sales desk */
+        const LN = [['Soap 100g', 'Carton', 420, 10, 3200, 0], ['Detergent 500g', 'Carton', 31, 4, 2800, 200], ['Biscuit 200g', 'Carton', 96, 6, 1900, 0], ['Shampoo 180ml', 'Carton', 58, 3, 4100, 0]];
+        function fmt(n) { return n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) }
+        function tot() { let s = 0; LN.forEach(p => s += p[3] * p[4] - p[5]); return s }
+        function cr() { const t = tot(), lim = 300000, bal = 340000; $('#cw').innerHTML = bal + t > lim ? `<div class="pw no"><i class="fa-solid fa-ban"></i><span><b>Credit limit exceeded.</b> Limit 3,00,000.00, outstanding 3,40,000.00 plus this invoice ${fmt(t)}. Mode: approval needed.</span><button class="btn" onclick="openDlg('approval')">Ask supervisor</button></div>` : '' }
+        function rl() { $('#ln').innerHTML = LN.map((p, i) => `<tr><td>${p[0]}</td><td>${p[1]}</td><td class="n">${p[2]}</td><td class="n"><input class="ri" value="${p[3]}" inputmode="numeric" aria-label="Quantity ${p[0]}" oninput="LN[${i}][3]=parseFloat(this.value)||0;tt()"></td><td class="n">${fmt(p[4])}</td><td class="n">${p[5] ? fmt(p[5]) : '<span class="nil">–</span>'}</td><td class="n" id="la${i}">${fmt(p[3] * p[4] - p[5])}</td><td class="c"><button class="ib" aria-label="Remove"><i class="fa-solid fa-xmark"></i></button></td></tr>`).join('') }
+        function tt() { LN.forEach((p, i) => { const e = $('#la' + i); if (e) e.textContent = fmt(p[3] * p[4] - p[5]) }); const t = tot(), d = LN.reduce((a, p) => a + p[5], 0); $('#tt').innerHTML = `<div><span>Subtotal</span><span>৳${fmt(t + d)}</span></div><div><span>Discount</span><span>-৳${fmt(d)}</span></div><div class="gt"><span>Total</span><span>৳${fmt(t)}</span></div><div><span>Previous outstanding</span><span>৳3,40,000.00</span></div><div><span>New outstanding</span><b class="neg">৳${fmt(340000 + t)}</b></div>`; cr() }
+        rl(); tt();
+        function saveInv() { if (340000 + tot() > 300000) { toast('no', 'Over the credit limit. Ask a supervisor to approve first.'); return } toast('ok', 'Invoice INV-HQ-26-001284 saved and printing') }
+        /* salesman app */
+        const Q = [['Soap 100g (carton)', 3200, 3], ['Detergent 500g (carton)', 2800, 0], ['Biscuit 200g (carton)', 1900, 2], ['Shampoo 180ml (carton)', 4100, 0], ['Tea 400g (carton)', 5600, 0]];
+        function pa() {
+            $('#pl').innerHTML = Q.map((q, i) => `<div class="pr"><span><b>${q[0]}</b><br><small class="lb">৳${fmt(q[1])} · Buy 10 get 1 free</small></span><span class="stp"><button onclick="Q[${i}][2]=Math.max(0,Q[${i}][2]-1);pa()" aria-label="Less">−</button><input value="${q[2]}" inputmode="numeric" aria-label="Quantity" oninput="Q[${i}][2]=parseInt(this.value)||0;pa()"><button onclick="Q[${i}][2]++;pa()" aria-label="More">+</button></span></div>`).join('');
+            const t = Q.reduce((a, q) => a + q[1] * q[2], 0), n = Q.filter(q => q[2] > 0).length, lim = 79500; $('#ac').textContent = n + ' items'; $('#at2').textContent = '৳' + fmt(t);
+            $('#aw').innerHTML = t > lim ? `<div class="pw no"><i class="fa-solid fa-ban"></i><span>Over available credit by ৳${fmt(t - lim)}. Submit for supervisor approval or reduce the order.</span></div>` : (t ? `<div class="pw"><i class="fa-solid fa-gift"></i><span>Scheme: add 7 more cartons of Soap to get 1 free.</span></div>` : '')
+        } pa();
+        function subApp() { const t = Q.reduce((a, q) => a + q[1] * q[2], 0); if (!t) { toast('wa', 'Add at least one item first'); return } toast(t > 79500 ? 'wa' : 'ok', t > 79500 ? 'Saved on the phone. Approval requested; it will sync when online.' : 'Order saved on the phone. It will sync when online.') }
+        /* settlement */
+        function sd() { const v = parseFloat(($('#cnt').value || '').replace(/,/g, '')) || 0, d = v - 92000; $('#df').innerHTML = d === 0 ? '<span class="nil">–</span>' : `<span class="${d < 0 ? 'neg' : ''}">${d < 0 ? '-' : '+'}${fmt(Math.abs(d))}</span>`; $('#sw').style.display = d === 0 ? 'none' : 'flex'; $('#sw span').textContent = (d < 0 ? 'Shortage' : 'Excess') + ' of ' + fmt(Math.abs(d)) + ' needs supervisor approval and becomes a recorded difference.' }
+        function settle() { const v = parseFloat(($('#cnt').value || '').replace(/,/g, '')) || 0; if (v !== 92000) { toast('wa', 'Request approval for the difference before closing the day.'); return } toast('ok', 'Settled. Rahim\'s cash in hand is now 0.00') }
+        /* aging */
+        const AG = [['Current', 26.4], ['1-30', 16.5], ['31-60', 10.2], ['61-90', 6.4], ['90+', 5.3]]; $('#aging').innerHTML = AG.map((a, i) => `<rect x="${40 + i * 110}" y="${130 - a[1] * 4}" width="70" height="${a[1] * 4}" rx="3" fill="${i >= 3 ? 'var(--no)' : i == 2 ? 'var(--wn)' : 'var(--ac)'}"/><text x="${75 + i * 110}" y="${124 - a[1] * 4}" text-anchor="middle" font-size="12" fill="var(--fg)">${a[1]}</text><text x="${75 + i * 110}" y="146" text-anchor="middle" font-size="12" fill="var(--mu)">${a[0]}</text>`).join('');
         /* dialogs */
         const X = {
-            simple: { ic: '<i class="fa-solid fa-trash"></i>', t: 'Remove coupon MISSYOU15?', m: 'Existing redemptions stay valid. No new customers can use the code.', b: 'Remove coupon' },
-            reason: { ic: '<i class="fa-solid fa-triangle-exclamation"></i>', t: 'Void invoice INV-GU-26-004512?', m: 'The sale of 4,800.00 will be voided, the stock usage restored and the points reversed. The customer is not notified automatically.', b: 'Void invoice', x: '<div class="fld"><label>Reason *</label><select id="rs"><option value="">Choose a reason</option><option>Wrong service billed</option><option>Wrong customer</option><option>Customer dispute</option></select></div>', ok: () => $('#rs').value },
-            approval: { ic: '<i class="fa-solid fa-user-shield"></i>', t: 'Unlock closed day: Dhanmondi, 14 Oct?', m: 'Edits will be allowed again until the day is closed once more. Enter a manager PIN. The approver and reason are recorded.', b: 'Unlock day', x: '<div class="fld"><label>Manager PIN *</label><input id="pn" type="password" inputmode="numeric" maxlength="6"></div>', ok: () => ($('#pn').value || '').length >= 4 },
-            typed: { ic: '<i class="fa-solid fa-lock"></i>', t: 'Deactivate branch "Uttara"?', m: 'No new appointments can be booked there. Type CONFIRM to continue.', b: 'Deactivate branch', x: '<div class="fld"><input id="dx" placeholder="CONFIRM" autocomplete="off"></div>', ok: () => $('#dx').value === 'CONFIRM' }
+            simple: { ic: '<i class="fa-solid fa-trash"></i>', t: 'Remove Noor Enterprise from route Mirpur 1?', m: 'The customer stays active. Future visits will not be planned for this route.', b: 'Remove from route' },
+            reason: { ic: '<i class="fa-solid fa-triangle-exclamation"></i>', t: 'Reverse receipt MR-0412?', m: 'The collection of 15,000.00 will be reversed and the invoices become due again. The salesman is notified.', b: 'Reverse receipt', x: '<div class="fld"><label>Reason *</label><select id="dx"><option value="">Select a reason…</option><option>Wrong customer</option><option>Wrong amount</option><option>Cheque bounced</option></select></div>', ok: () => $('#dx').value },
+            approval: { ic: '<i class="fa-solid fa-user-shield"></i>', t: 'Approve credit override?', m: 'Noor Enterprise exceeds the limit by 40,000.00. Enter a manager PIN. The approver and reason are recorded in the activity log.', b: 'Approve override', x: '<div class="fld"><label>Manager PIN *</label><input id="dx" type="password" inputmode="numeric" maxlength="4" placeholder="4 digits"></div>', ok: () => $('#dx').value.length === 4 },
+            typed: { ic: '<i class="fa-solid fa-lock"></i>', t: 'Deactivate warehouse "Chattogram depot"?', m: 'No stock can be issued from it. Type CONFIRM to continue.', b: 'Deactivate warehouse', x: '<div class="fld"><input id="dx" placeholder="CONFIRM" autocomplete="off"></div>', ok: () => $('#dx').value === 'CONFIRM' }
         };
         function openDlg(k) {
-            const d = X[k], bx = $('#dlg'); bx.innerHTML = '<div class="dic">' + d.ic + '</div><h3>' + d.t + '</h3><p>' + d.m + '</p>' + (d.x || '') + '<div class="acts"><button class="btn" id="dc">Cancel</button><button class="btn d" id="dy">' + d.b + '</button></div>';
-            const y = $('#dy'), chk = () => y.disabled = d.ok ? !d.ok() : false; chk(); bx.oninput = chk; bx.onchange = chk; $('#ov').classList.add('on'); $('#dc').focus();
-            $('#dc').onclick = cl; y.onclick = () => { y.disabled = true; y.textContent = 'Working...'; setTimeout(() => { cl(); toast('ok', d.b + ' done') }, 600) }
+            const d = X[k], bx = $('#dlg'); bx.innerHTML = `<div class="dic">${d.ic}</div><h3>${d.t}</h3><p>${d.m}</p>${d.x || ''}<div class="acts"><button class="btn" id="dc">Cancel</button><button class="btn d" id="dy">${d.b}</button></div>`;
+            const y = $('#dy'), chk = () => y.disabled = d.ok ? !d.ok() : false; chk(); bx.oninput = chk; $('#ov').classList.add('on'); $('#dc').focus();
+            $('#dc').onclick = cl; y.onclick = () => { y.disabled = true; y.textContent = 'Working…'; setTimeout(() => { cl(); toast('ok', d.b + ' done') }, 700) }
         }
         function cl() { $('#ov').classList.remove('on') }
         $('#ov').onclick = e => { if (e.target.id === 'ov') cl() };
         addEventListener('keydown', e => { if (e.key === 'Escape') { cl(); $('#so').classList.remove('on') } });
         /* validation */
-        const R = [['f1', 'd1', 'Name is required.', v => v.trim()], ['f2', 'd2', 'Mobile must be 11 digits starting with 01.', v => /^01[3-9]\d{8}$/.test(v)], ['f3', 'd3', 'Enter a valid email, like name@example.com.', v => !v || /^\S+@\S+\.\S+$/.test(v)]];
-        function vf(r) { const ok = r[3]($('#' + r[0]).value), d = $('#' + r[1]); d.classList.toggle('bad', !ok); d.querySelector('.err').innerHTML = ok ? '' : '<i class="fa-solid fa-circle-exclamation"></i> ' + r[2]; return ok }
-        R.forEach(r => { $('#' + r[0]).addEventListener('blur', () => vf(r)); $('#' + r[0]).addEventListener('input', () => { if ($('#' + r[1]).classList.contains('bad')) vf(r) }) });
+        const R = [['f1', 'd1', 'Shop name is required.', v => v.trim()], ['f2', 'd2', 'Mobile must be 11 digits starting with 01.', v => /^01[3-9]\d{8}$/.test(v)], ['f3', 'd3', 'Enter a valid email, like name@example.com.', v => !v || /^\S+@\S+\.\S+$/.test(v)]];
+        function vf(r) { const ok = r[3]($('#' + r[0]).value), d = $('#' + r[1]); d.classList.toggle('bad', !ok); d.querySelector('.err').innerHTML = ok ? '' : '<i class="fa-solid fa-circle-exclamation"></i>' + r[2]; return ok }
+        R.forEach(r => $('#' + r[0]).addEventListener('blur', () => vf(r))); R.forEach(r => $('#' + r[0]).addEventListener('input', () => { if ($('#' + r[1]).classList.contains('bad')) vf(r) }));
         $('#sf').onsubmit = e => {
             e.preventDefault(); const bad = R.filter(r => !vf(r)), b = $('#ban');
-            if (bad.length) { b.style.display = 'block'; b.innerHTML = '<b>' + bad.length + ' field' + (bad.length > 1 ? 's need' : ' needs') + ' your attention</b>'; $('#' + bad[0][0]).focus(); toast('no', 'Please fix the highlighted fields') }
-            else { b.style.display = 'none'; toast('ok', 'Customer saved. Code CU-04418 created.') }
+            if (bad.length) { b.style.display = 'block'; b.innerHTML = `<b>${bad.length} field${bad.length > 1 ? 's need' : ' needs'} your attention</b><br>` + bad.map(r => `<a onclick="$('#${r[0]}').focus()">${r[2].split(' ')[0]}…</a>`).join(''); $('#' + bad[0][0]).focus(); toast('no', 'Customer not saved. Fix the highlighted fields.') }
+            else { b.style.display = 'none'; toast('ok', 'Customer saved. Code C-0232 created.') }
         };
     </script>
 </body>
